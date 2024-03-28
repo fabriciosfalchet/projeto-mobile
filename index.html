@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Projeto 6</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        html {
+            background-image: linear-gradient(to bottom, #84c0c6, aquamarine);
+            /*background-color:aquamarine*/
+        }
+        header {
+            background-color: #84C0C6;
+            height: 16vh
+        }
+        header > h1 {
+            text-align: center;
+            padding: 20px 0px;
+            /*color: #553E27;*/
+            color: #46B1C9;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Pacifico', 'arial';
+            text-shadow: 2px 2px 3px #171738;
+        }
+        section#moldura {
+            background-image: url(imagens/back-pc.jpg);
+            width: 414px;
+            height: 500px;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        section > iframe {
+            position: relative;
+            top: 114px;
+            left: 26px;
+            width: 334px;
+            /*height: 193px;*/
+            height: 210px;
+        }
+        section#icones {
+            /*background-color: #84C0C6;*/
+        }
+        section#icones > a > img {
+            width: 70px;
+            height: 50px;
+            border-radius: 50% 50%;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        section#icones > a > img:hover {
+            border: 3px solid white;
+            top: 5%;
+            transform: translate(-4px,-4px);
+            box-shadow: 4px 4px 4px black;
+            transition: box-shadow 0.5s;
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem Vindo</h1>
+    </header>
+    <main>
+        <section id="moldura">
+            <iframe src="membrosfamilia/pai.html" frameborder="0" class="iframe" name="iframe"></iframe>
+
+        </section>
+        <section id="icones">
+            <a href="membrosfamilia/pai.html" target="iframe"><img src="icones/pai.png" alt="iconepai"></a>
+            <a href="membrosfamilia/mae.html" target="iframe"><img src="icones/mae.png" alt="mae"></a>
+            <a href="membrosfamilia/matheus.html" target="iframe"><img src="icones/matheus.png" alt="matheus"></a>
+            <a href="membrosfamilia/bonitao.html" target="iframe"><img src="icones/fabricio.png" alt="bonitao"></a>
+            <a href="membrosfamilia/gui.html" target="iframe"><img src="icones/guilherme.png" alt="gui"></a>
+            <a href="membrosfamilia/alice.html" target="iframe"><img src="icones/alice.png" alt="alice"></a>
+        </section>
+    </main>
+</body>
+</html>
