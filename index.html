@@ -14,12 +14,21 @@
             font-size: 1em;
         }
         html {
-            background-image: linear-gradient(to bottom, #84c0c6, aquamarine);
-            /*background-color:aquamarine*/
+            
+            /*background-color:#84c0c6;*/
+            background-image: linear-gradient(to bottom, #71b9c0, #84c0c6);
+        }
+        main {
+            border: 4px solid #5fafb6;
+            background-color: #3a737980;
+            height: 65vh;
+            border-radius: 20px 0px;
+            margin-top: 15px;
         }
         header {
-            background-color: #84C0C6;
-            height: 16vh
+            background-color: #64aab1;
+            height: 16vh;
+            
         }
         header > h1 {
             text-align: center;
@@ -33,26 +42,37 @@
         }
         section#moldura {
             background-image: url(imagens/back-pc.jpg);
-            width: 414px;
-            height: 500px;
-            margin: auto;
+            width: 315px;
+            height: 405px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             position: absolute;
-            top: 65%;
-            left: 50%;
+            top: 45%;
+            left: 42%;
             transform: translate(-50%,-50%);
+            box-shadow: 6px 6px 6px #64aab1;
+            border-radius: 20px 0px;
+            margin-top: 30px;
+        }
+
+        section#moldura:hover {
+            border: 2px solid white;
+            transform: translate(-51%,-51%);
+            box-shadow: 12px 12px 12px #64AAB1;
+            transition: box-shadow 0.5s;
+            transition: transform 0.5s
         }
         section > iframe {
             position: relative;
-            top: 114px;
-            left: 26px;
-            width: 334px;
+            top: 89px;
+            left: 7px;
+            width: 272px;
             /*height: 193px;*/
-            height: 210px;
+            height: 180px;
         }
         section#icones {
+            text-align: right;
             /*background-color: #84C0C6;*/
         }
         section#icones > a > img {
@@ -84,11 +104,11 @@
 
         </section>
         <section id="icones">
-            <a href="membrosfamilia/pai.html" target="iframe"><img src="icones/pai.png" alt="iconepai"></a>
-            <a href="membrosfamilia/mae.html" target="iframe"><img src="icones/mae.png" alt="mae"></a>
-            <a href="membrosfamilia/matheus.html" target="iframe"><img src="icones/matheus.png" alt="matheus"></a>
-            <a href="membrosfamilia/bonitao.html" target="iframe"><img src="icones/fabricio.png" alt="bonitao"></a>
-            <a href="membrosfamilia/gui.html" target="iframe"><img src="icones/guilherme.png" alt="gui"></a>
+            <a href="membrosfamilia/pai.html" target="iframe"><img src="icones/pai.png" alt="iconepai"></a> <br>
+            <a href="membrosfamilia/mae.html" target="iframe"><img src="icones/mae.png" alt="mae"></a> <br>
+            <a href="membrosfamilia/matheus.html" target="iframe"><img src="icones/matheus.png" alt="matheus"></a> <br>
+            <a href="membrosfamilia/bonitao.html" target="iframe"><img src="icones/fabricio.png" alt="bonitao"></a> <br>
+            <a href="membrosfamilia/gui.html" target="iframe"><img src="icones/guilherme.png" alt="gui"></a> <br>
             <a href="membrosfamilia/alice.html" target="iframe"><img src="icones/alice.png" alt="alice"></a>
         </section>
     </main>
